@@ -1,0 +1,140 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    partial class Vrema
+    {
+        public int chas;
+        public int min;
+        public int sec;
+        public readonly int polden = 12;// поле для чтения
+        public const int polnoch = 0; //константа
+        static int z;
+        public int Chasy
+        {
+            get { if (chas <= 23 & chas >= 0) return 1; return chas; }
+            set { chas = value; }
+        }
+        public int Minyt
+        {
+            get { if (min <= 59 & min >= 0) return 1; return min; }
+            set { min = value; }
+        }
+        public int Secynd
+        {
+            get { if (sec <= 59 & sec >= 0) return 1; return sec; }
+        }
+
+        static Vrema()//статический конструктор
+        {
+
+            Console.WriteLine("Static constructor");
+        }
+        private Vrema()
+        {
+            //"Закрытый конструктор"
+        }
+        public Vrema(int a, int b, int c)
+        {
+            chas = a;
+            min = b;
+            sec = c;
+            z++;
+        }
+        public void reWrite()
+        {
+            Vrema.Inform();
+            Console.WriteLine("Время: " + chas + "." + min + "." + sec);
+        }
+        static void Inform()
+        {
+            Console.WriteLine("(" + z.ToString() + ")");
+        }
+        public void Categorii()
+        {
+            if (chas >= 22 || chas >= 0 & chas <= 6) Console.WriteLine("Сейчас ночь");
+            if (chas > 6 & chas <= 10) Console.WriteLine("Сейчас утро");
+            if (chas > 10 & chas <= 17) Console.WriteLine("Сейчас день");
+            if (chas > 17 & chas <= 22) Console.WriteLine("Сейчас вечер");
+        }
+        public void Zadanie(int x, int w, int v)
+        {
+
+            Console.WriteLine("Введите часы ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите минуты ");
+            w = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите секунды ");
+            v = Convert.ToInt32(Console.ReadLine());
+            Vrema n = new Vrema(x, w, v);
+            z--;
+            n.reWrite();
+            if (n.Chasy == 1 & n.Minyt == 1 & n.Secynd == 1) { Console.WriteLine("Время задано корректно"); n.Categorii(); } else Console.WriteLine("Время задано не корректно");
+            Console.ReadLine();
+        }
+    }
+    partial class Vrema
+    {
+        public virtual Boolean Epuals(Vrema one, Vrema two)
+        {
+            if (one == null) return false;
+            if (two.GetType() != one.GetType()) return false;
+            else  return true;
+
+        }
+    }
+
+
+        //Создать класс типа -Времяс полями: часы (0-23), минуты (0-59), секунды (0-59). Свойства класса должны проверять корректность задаваемых параметров.Создать массив объектов. 
+        //Вывести:a) время с заданным числом часов;b) список времен по группам: ночь, утро, день, вечер
+
+
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int x = 0;
+                int w = 0;
+                int v = 0;
+                Vrema ras = new Vrema(23, 15, 36);
+                ras.reWrite();
+                if (ras.Chasy == 1 & ras.Minyt == 1 & ras.Secynd == 1) Console.WriteLine("Время задано корректно"); else Console.WriteLine("Время задано не корректно");
+                ras.Categorii();
+                Console.ReadLine();
+
+                Vrema n = new Vrema(x, w, v);
+                n.Zadanie(x, w, v);
+
+                Vrema tri = new Vrema(18, 12, 01);
+                tri.reWrite();
+                if (tri.Chasy == 1 & tri.Minyt == 1 & tri.Secynd == 1) Console.WriteLine("Время задано корректно"); else Console.WriteLine("Время задано не корректно");
+                tri.Categorii();
+                Console.ReadLine();
+
+                var chetyre = new
+                {
+                    chas = 1,
+                    min = 15,
+                    sec = 12,
+                };
+                Console.WriteLine("Время: " + chetyre.chas + "." + chetyre.min + "." + chetyre.sec);
+
+
+                if (tri.Epuals(ras, tri) == true) Console.WriteLine("Равны "); else Console.WriteLine("Не равны ");
+
+
+
+
+            }
+        }
+
+
+
+
+
+    }
