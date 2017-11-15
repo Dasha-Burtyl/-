@@ -1,0 +1,399 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+using System.Diagnostics;
+
+namespace ConsoleApp7
+{
+    class Transport
+    {
+        public string sredstvo;
+        public Transport(string a)
+        {
+            sredstvo = a;
+        }
+        public virtual string ToString(Transport obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Транспортное средство: " + obj.sredstvo);
+            return n;
+        }
+
+
+    }
+    interface IAvto
+    {
+        string ToString(Avto obj);
+        string Ravno(Avto obj1, Avto obj2);
+    }
+    class Avto : Transport
+    {
+        public string marka;
+        public int nomer;
+        public Avto(string a, string b, int c) : base(a)
+        {
+                sredstvo = a;
+                marka = b;
+                nomer = c;
+
+         }
+        public virtual string ToString(Avto obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Транспортное средство: " + obj.sredstvo + ", Марка: " + obj.marka + ", Номер " + obj.nomer);
+            return n;
+        }
+        public virtual string Ravno(Avto obj1, Avto obj2)
+        {
+            string n = "ok";
+            if (obj1.nomer == obj2.nomer & obj1.marka == obj2.marka) Console.WriteLine("Это одна и та же машина "); else Console.WriteLine("Это разные машины ");
+            return n;
+        }
+    }
+
+
+    interface IPoezd
+    {
+        string ToString(Poezd obj);
+        string Bysto(Poezd obj1, Poezd obj2);
+    }
+    class Poezd : Transport, IPoezd
+    {
+        public string nachalo;
+        public string konets;
+        public double otprav;
+        public double prib;
+        public double vrema;
+        public Poezd(string a, string b, string e, double c, double d, double f) : base(a)
+        {
+            sredstvo = a;
+            nachalo = b;
+            konets = e;
+            otprav = c;
+            prib = d;
+            vrema = f;
+        }
+        public virtual string ToString(Poezd obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Транспортное средство: " + obj.sredstvo + ", Пункт отправления: " + obj.nachalo + ", Пункт прибытия " + obj.konets + ", Время отправления " + obj.otprav + ", Время прибытия " + obj.prib + ", Время в пути " + obj.vrema);
+            return n;
+        }
+        public virtual string Bysto(Poezd obj1, Poezd obj2)
+        {
+            string n = "ok";
+            if (obj1.nachalo == obj2.nachalo & obj1.konets == obj2.konets) { if (obj1.vrema > obj2.vrema) Console.WriteLine("Первый поезд быстрее "); else Console.WriteLine("Второй поезд быстрее "); } else Console.WriteLine("Поезда идут по разному маршруту ");
+            return n;
+
+        }
+
+
+    }
+    interface IEkspress
+    {
+        string ToString(Poezd obj);
+        string Bysto(Ekspress obj1, Ekspress obj2);
+    }
+    class Ekspress : Poezd, IEkspress
+    {
+        public Ekspress(string a, string b, string e, double c, double d, double f) : base(a, b, e, c, d, f)
+        {
+            sredstvo = a;
+            nachalo = b;
+            konets = e;
+            otprav = c;
+            prib = d;
+            vrema = f;
+        }
+        public override string ToString(Poezd obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Транспортное средство: " + obj.sredstvo + ", Пункт отправления: " + obj.nachalo + ", Пункт прибытия " + obj.konets + ", Время отправления " + obj.otprav + ", Время прибытия " + obj.prib + ", Время в пути " + obj.vrema);
+            return n;
+        }
+        public virtual string Bysto(Ekspress obj1, Ekspress obj2)
+        {
+            string n = "ok";
+            if (obj1.nachalo == obj2.nachalo & obj1.konets == obj2.konets) { if (obj1.vrema > obj2.vrema) Console.WriteLine("Первый поезд быстрее "); else Console.WriteLine("Второй поезд быстрее "); } else Console.WriteLine("Поезда идут по разному маршруту ");
+            return n;
+
+        }
+
+
+    }
+    interface IVagon
+    {
+        string ToString(Vagon obj);
+        bool Equals(int a, int b);
+    }
+    sealed class Vagon : IVagon
+    {
+        public int nomber;
+
+        public Vagon(int a)
+        {
+            nomber = a;
+        }
+        public string ToString(Vagon obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Номер вагона: " + obj.nomber);
+            return n;
+        }
+        public bool Equals(int a, int b)
+        {
+            bool n = true;
+            if (a == b) Console.WriteLine("Это один и тот же вагон "); else Console.WriteLine("Это разные вагоны ");
+            return n;
+        }
+
+    }
+
+    abstract partial class Dvigatel
+    {
+        public string type;
+        public Dvigatel(string a)
+        {
+            type = a;
+        }
+    }
+    abstract partial class Dvigatel//sealed - бесплодный
+    {
+        public virtual string ToString(Dvigatel obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Марка двигателя: " + obj.type);
+            return n;
+        }
+    }
+
+    class Printer
+    {
+        public virtual string IAmPrinting(IPoezd someobj)
+        {
+            string n = "ok";
+            someobj.ToString();
+            Console.WriteLine(someobj.GetType());
+            return n;
+        }
+    }
+    //______________________________________
+
+    struct Mashiny
+    {
+        public string Name;
+        public int n;
+
+        public Mashiny(string Name, int n)
+        {
+            this.Name = Name;
+            this.n = n;
+        }
+        public void WriteS()
+        {
+            Console.WriteLine("Марка: {0}, номер: {1}", Name, n);
+        }
+    }
+
+    enum Mashina
+    {
+        Name, Family, ShortName = 2, Age
+    }
+
+
+    class TransporAg
+    {
+        public int[] arr = new int[6];
+        public string marka;
+        static int z;
+        static int a;
+        public TransporAg(string a, int b, int c, int d)
+        {
+            this.marka = a;
+            this.arr[0] = b;
+            this.arr[1] = c;
+            this.arr[2] = d;
+            z++;
+        }
+        public int Svostvo
+        {
+            get { return z; }
+            set { z = value; }
+
+        }
+        public void Add(TransporAg[] A, TransporAg obj)
+        {
+            A[a] = obj;
+            a++;
+        }
+        public void Del()
+        {
+            z--;
+        }
+        public void ReWrite(TransporAg[] A)
+        {
+            for (int i = 0; i < z; i++)
+            {
+                Console.WriteLine(A[i].marka);
+                for (int u = 0; u < 3; u++)
+                    Console.WriteLine("  " + A[i].arr[u]);
+            }
+        }
+        public void Stoimost(TransporAg[] A)
+        {
+            int sum = 0;
+            for (int i = 0; i < z; i++)
+            {
+                sum += A[i].arr[0];
+            }
+            Console.WriteLine("Стоимость всех транспортных средств составляет " + sum);
+        }
+        public void SotrPower(TransporAg[] A)
+        {
+            int a = 10;
+            int b = 50;
+            int c = 100;
+            Console.WriteLine("Минимальный расход топлива: ");
+            for (int i = 0; i < z; i++)
+            {
+                if (A[i].arr[1] < a) Console.WriteLine("  " + A[i].marka);
+            }
+            Console.WriteLine("Средний расход топлива: ");
+            for (int i = 0; i < z; i++)
+            {
+                if (a < A[i].arr[1] && A[i].arr[1] < b) Console.WriteLine("  " + A[i].marka);
+            }
+            Console.WriteLine("Большой расход топлива: ");
+            for (int i = 0; i < z; i++)
+            {
+                if (b < A[i].arr[1] && A[i].arr[1] < c) Console.WriteLine("  " + A[i].marka);
+            }
+        }
+        public void SortSkorost(TransporAg[] A, int a, int b)
+        {
+            Console.WriteLine("В заданый диапазон скоростей входят машины: ");
+            for (int i = 0; i < z; i++)
+            {
+                if (a < A[i].arr[2] && A[i].arr[2] < b) Console.WriteLine("  " + A[i].marka);
+            }
+        }
+    }
+
+    class Contol
+    {
+        public void Metod(TransporAg obj, TransporAg[] agenstvo, int a, int b)
+        {
+            obj.ReWrite(agenstvo);
+            obj.SortSkorost(agenstvo, a, b);
+            obj.SotrPower(agenstvo);
+            obj.Stoimost(agenstvo);
+
+        }
+    }
+
+
+    class Program//Автомобиль, Поезд, Транспортное средство, Экспресс, Двигатель, Вагон.
+                 //Создать частое Транспортное агентство.  Подсчитать стоимость всех транспортных средств.
+                 // Провести сортировку автомобилей по расходу топлива.  
+                 //Найти транспортное в компании, соответствующий заданному диапазону параметров скорости.
+    {
+        static void Main(string[] args)
+        {
+            Transport ras = new Transport("Машина");
+            ras.ToString(ras);
+            Avto dva = new Avto("Машина", "Ауди", 123);
+            dva.ToString(dva);
+            Poezd tri = new Poezd("Поезд", "Минск", "Москва", 13, 22, 9);
+            Ekspress four = new Ekspress("Поезд", "Минск", "Москва", 13.15, 22.30, 9.15);
+            tri = four as Poezd;
+            if (tri != null) Console.WriteLine("Преобразование прошло успешно"); else Console.WriteLine("Ошибка при преобразовании");
+            Vagon five = new Vagon(6);
+            IVagon six = new Vagon(5);
+            six.Equals(five.nomber, 9);
+
+            Ekspress seven = new Ekspress("Поезд", "Минск", "Москва", 16.15, 6.20, 10.05);
+            Poezd eith = new Poezd("Поезд", "Минск", "Санкт-Петербург", 16.15, 8.15, 12.00);
+            seven.Bysto(four, seven);
+            eith.Bysto(tri, eith);
+            object[] A = new object[5];
+            IPoezd s; IPoezd v;
+            s = eith;
+            v = tri;
+            A[0] = eith;
+            A[1] = tri;
+            Printer nine = new Printer();
+            nine.IAmPrinting(eith);
+            nine.IAmPrinting(tri);
+
+            //_____________________________________
+            Console.WriteLine("_____________________________________ ");
+            Mashiny a1 = new Mashiny("Мерседес", 777);
+            Mashiny a2 = new Mashiny("Жигули", 555);
+            a1.WriteS();
+            a2.WriteS();
+
+            Mashina user1;
+            for (user1 = Mashina.Name; user1 <= Mashina.Age; user1++)
+                Console.WriteLine("Элемент: \"{0}\", значение {1}", user1, (int)user1);
+            Console.ReadLine();
+
+            TransporAg[] agtnstvo = new TransporAg[3];//стоимость, топливо, скорость
+            TransporAg x1 = new TransporAg("volvo", 100, 15, 230);
+            TransporAg x2 = new TransporAg("mersedes", 220, 70, 150);
+            TransporAg x3 = new TransporAg("shigyli", 50, 7, 60);
+            x1.Add(agtnstvo, x1);
+            x2.Add(agtnstvo, x2);
+            x3.Add(agtnstvo, x3);
+            Contol control = new Contol();
+            control.Metod(x1, agtnstvo, 120, 250);
+            Console.WriteLine("_____________________________________ ");
+            /*  try
+               {
+                   Console.WriteLine("Введите марку машины: ");
+                   string y = (Console.ReadLine());
+               }
+               catch (FormatException ex)
+               {
+                   Console.WriteLine("Ошибка!");
+                   Console.Write(ex.Message + "1\n\n");
+                   Console.Write(ex.TargetSite + "1\n\n");
+               }*/
+
+            try
+            {
+                Console.WriteLine("Введите номер машины: ");
+                int x = int.Parse(Console.ReadLine());
+                if (x > 999) { throw new System.DivideByZeroException("НЕдопустимое значение"); }
+                Debug.Assert(x != 0, "Values array cannot be null");
+                Console.WriteLine("Введите марку машины: ");
+                string y = Console.ReadLine();
+                if (y.Length == 0) { throw new System.FormatException("Недопустимый формат"); }
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("Ошибка(3) " + e.Message);
+                Console.Write(e.TargetSite + "\n\n");
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Ошибка(2) " + e.Message);
+                Console.Write(e.TargetSite + "\n\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ошибка(1)");
+                Console.Write(ex.Message + "\n\n");
+                Console.Write(ex.TargetSite + "\n\n");
+            }
+            catch { Console.WriteLine("Возникла непредвиденная ошибка"); }
+            finally
+            {
+                Console.WriteLine("Конец программы");
+            }
+        }
+    }
+}
+
