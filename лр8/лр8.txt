@@ -1,0 +1,98 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+
+namespace ConsoleApp8
+{
+    public class Transport
+    {
+        int Speed;
+        string Model;
+        public Transport(int speed, string model)
+        {
+            Speed = speed;
+            Model = model;
+        }
+        public override string ToString()
+        {
+            string n =  ;
+            Console.WriteLine(this.Model +   + this.Speed);
+            return n;
+        }
+        public class Exception2  System.Exception
+        {
+            public Exception2(string message)  base(message)
+            {
+                Console.WriteLine(Ошибка!);
+            }
+        }
+
+        public interface IInterfaceT
+        {
+            int Add(Transport t, int z);
+            int Delete(int n, int z);
+            void ReWrite(int z);
+        }
+
+        public class ArrayClassT  IInterfaceT where T  class
+        {
+            public ListTransport list = new ListTransport();
+            public int Delete(int n,int z)
+            {
+                list.RemoveAt(n);
+                z--;
+                return z;
+
+            }
+            public int Add(Transport obj, int z)
+            {
+                list.Insert(z, obj);
+                z++;
+                return z;
+
+            }
+            public void ReWrite(int z)
+            {
+                if (list.Capacity == 0)
+                {
+                    throw new Exception2(Список пуст.);
+                }
+                for (int i = 0; i  z; i++)
+                {
+                    Console.WriteLine(list[i]);
+                }
+            }
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+              try  {
+                    int z = 0;
+                    Transport transport1 = new Transport(100, Audi);
+                    Transport transport2 = new Transport(150, BMW);
+                    Transport transport3 = new Transport(200, Ferrari);
+                    ArrayClassTransport arrayClass = new ArrayClassTransport();
+                    z = arrayClass.Add(transport1, z);
+                    z = arrayClass.Add(transport2, z);
+                    z = arrayClass.Add(transport3, z);
+                    z = arrayClass.Delete(1, z);
+                    arrayClass.ReWrite(z);
+                }
+                catch (Exception2 e)
+                {
+                    Console.WriteLine(e);
+                }
+                finally
+                {
+                    Console.WriteLine(Конец программы);
+                }
+            }
+        }
+    }
+}
