@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp9
+{
+    //Создать  класс  Пользователь с событиями upgrade  и  work. В main создать некоторое количество объектов (ПО). Подпишите объекты на события произвольным образом. 
+    //Реакция на события  может быть следующая: обновление версии, вывод сообщений и т.п.  Проверить результаты изменения объектов после наступления событий. 
+    delegate void UI();
+    class MyEvent { 
+    public event UI UpGrade;
+        public event UI Work;
+        public void OnUpGread()
+        {
+            UpGrade();
+        }
+        public void OnWork()
+        {
+            Work();
+        }
+}
+    class User
+    {
+        string uiProgram;
+        public User(string Program)
+        {
+            this.uiProgram = Program;
+        }
+        public void UpgreadInfo()
+        {
+            Console.WriteLine(uiProgram + "  UpGrade...");
+        }
+        public void WorkInfo()
+        {
+            Console.WriteLine(uiProgram+ "  Work...");
+        }
+        public void Str1(string a)
+        {
+            a = a.Insert(2, "oh");//вставка элемента
+            Action<string> op;
+            op = Str2;
+            op(a);
+
+        }
+        public void Str2(string a)
+        {
+          a = a.Remove(a.Length-3);//удаление
+            Action<string> op;
+            op = Str3;
+            op(a);
+
+        }
+        public void Str3(string a)
+        {
+          a = a.ToUpper();// Делает заглавными все буквы в вызывающей строке.
+            Action<string> op;
+            op = Str4;
+            op(a);
+
+        }
+        public void Str4(string a)
+        {
+          a=a.PadRight(a.Length + 4);//Позволяет дополнить строку символами справа
+            Action<string> op;
+            op = Str5;
+            op(a);
+
+        }
+        public void Str5(string a)
+        {
+          a = a.Insert(a.Length -2, "ho");//вставка элемента
+          Console.WriteLine(a);
+        }
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyEvent evt = new MyEvent();
+            User user1 = new User("Program");
+            evt.UpGrade += user1.UpgreadInfo;
+            evt.OnUpGread();
+            evt.Work += user1.WorkInfo;
+            evt.OnWork();
+
+            User user2 = new User("Ghhh hk skd");
+            user2.Str1("gfhhdt rhyj ghlk");
+        }
+    }
+}
