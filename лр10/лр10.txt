@@ -1,0 +1,179 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+using System.Collections.Specialized;
+using System.Collections.ObjectModel;
+
+namespace ConsoleApp10
+{
+    class MyCollection
+    {
+        public static ArrayList NewCollection(string a,int i,int b)
+        {   int c;
+            ArrayList arr = new ArrayList();
+            arr.Add(1);
+            arr.Add(2);
+            arr.Add(3);
+            arr.Add(4);
+            arr.Add(5);
+            arr.Add(a);
+            Console.WriteLine("Исходная коллекция чисел: ");
+            MyCollection.WriteMyCollection(arr);
+            Console.WriteLine(" ");
+            arr.RemoveAt(i);
+            Console.WriteLine("Kоллекция чисел после удаления: ");
+            MyCollection.WriteMyCollection(arr);
+            c=arr.BinarySearch(b);
+            Console.WriteLine(" ");
+            Console.WriteLine("Элемент найдеен:"+arr[c]);
+            Console.WriteLine("__________________________________");
+            return arr;
+        }
+
+        public static void WriteMyCollection(ArrayList arr)
+        {
+            Console.WriteLine("Кол-во элементов в коллекции: "+arr.Count);
+            for(int i=0; i<arr.Count; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+        }
+    }
+
+    class MyCollectionTwo
+    {
+        public static SortedList<int, char> Sort(int n)
+        {
+            int x;
+            SortedList<int, char> Info = new SortedList<int, char>();
+            Info.Add(1,'a');
+            Info.Add(2,'c');
+            Info.Add(3,'e');
+            Info.Add(4,'g');
+            Info.Add(5,'i');
+            Console.WriteLine("Ключ - значение: ");
+            MyCollectionTwo.WriteMyCollectionTwo(Info);
+            Console.WriteLine(" ");
+            ICollection<int> keys = Info.Keys;
+            for (int i = 0; i < n+1; i++)
+            {
+                Info.Remove(i);
+            }
+            Console.WriteLine("После удаления: ");
+            MyCollectionTwo.WriteMyCollectionTwo(Info);
+            
+            Console.WriteLine("__________________________________");
+            List<char> mylist = new List<char> {};
+            for (int i = 0; i <Info.Count; i++)
+            {
+                mylist.Insert(i, Info.Values[i]);
+            }
+            Console.WriteLine("Список №2: ");
+            MyCollectionTwo.WriteMyCollectionTree(mylist);
+            x=mylist.BinarySearch('g');
+            Console.WriteLine("Индекс этого элемента" + x);
+            return Info;
+        }
+        public static void WriteMyCollectionTwo(SortedList<int, char> Info)
+        {
+            ICollection<int> keys = Info.Keys;
+            foreach (int s in keys)
+                Console.WriteLine("One: {0}, Two: {1}", s, Info[s]);
+        }
+        public static void WriteMyCollectionTree(List<char> mylist)
+        {
+            for (int i = 0; i < mylist.Count; i++)
+            {
+                Console.WriteLine(mylist[i]);
+            }
+        }
+    }
+
+    public class Avto : IComparable<Avto>
+    {
+        int Nomer;
+        string Model;
+        public Avto(int nomer, string model)
+        {
+            Nomer = nomer;
+            Model = model;
+        }
+        public override string ToString()
+        {
+            string n = " ";
+            Console.Write(this.Model + " " + this.Nomer);
+            return n;
+        }
+        public int CompareTo(Avto obj)
+        {
+            if (this.Model == obj.Model)
+                    return 1;
+            else
+            return 0;
+        }
+    }
+   public class MyCollectionThree
+    {
+        public static List<Avto> Lists(Avto obj1, Avto obj2, Avto obj3)
+        {
+            int x;
+            List<Avto> myListAvto = new List<Avto> { };
+            myListAvto.Insert(0, obj1);
+            myListAvto.Insert(1, obj2);
+            myListAvto.Insert(2, obj3);
+            Console.WriteLine("__________________________________");
+            Console.WriteLine("Список №2: ");
+            MyCollectionThree.WriteMyCollectionTree(myListAvto);
+            myListAvto.Remove(obj2);
+            Console.WriteLine("  ");
+            Console.WriteLine("После удаления:  ");
+            MyCollectionThree.WriteMyCollectionTree(myListAvto);
+            x = myListAvto.BinarySearch(obj1);
+            Console.WriteLine("Индекс этого элемента" + x);
+            return myListAvto;
+        }
+        public static void WriteMyCollectionTree(List<Avto> myListAvto)
+        {
+            for (int i = 0; i < myListAvto.Count; i++)
+            {
+                Console.WriteLine(myListAvto[i]);
+            }
+        }
+    }
+
+
+
+
+   
+    class Program//SortedList<TKey,TValue> - char - List<T>
+    {
+        static void Main(string[] args)
+        {
+            int z = 0;
+            ArrayList Coll = MyCollection.NewCollection("('_')",2,5);
+            SortedList<int, char> UserInfo = MyCollectionTwo.Sort(2);
+            Avto one = new Avto(260, "Mersedes");
+            Avto two = new Avto(150, "Honda");
+            Avto three = new Avto(170, "Audi");
+            List<Avto> Uo = MyCollectionThree.Lists(one,two,three);
+
+            var data = new ObservableCollection<Avto>();
+            data.CollectionChanged += Data_CollectionChanged;//метод Data_CollectionChanged регистрируется на событие CollectionChanged
+            data.Add(one);
+            data.Add(two);
+            data.Insert(1,three);
+            data.Remove(one);
+            Console.WriteLine(data[0]);
+            Console.WriteLine(data[1]);
+
+        }
+
+        private static void Data_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            Console.WriteLine(" ");
+        }
+    }
+}
