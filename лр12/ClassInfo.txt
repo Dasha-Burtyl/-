@@ -1,0 +1,84 @@
+get_Cvostvo
+set_Cvostvo
+ToString
+Metod
+MetodTwo
+Equals
+GetHashCode
+GetType
+System.String get_Cvostvo()
+Void set_Cvostvo(System.String)
+System.String ToString()
+Void Metod()
+System.String MetodTwo(System.String)
+Boolean Equals(System.Object)
+Int32 GetHashCode()
+System.Type GetType()
+Int32 Speed
+System.String Model
+System.String Cvostvo
+ConsoleApp12.IInterfaceT
+System.String MetodTwo(System.String)
+get_Cvostvo
+set_Cvostvo
+ToString
+Metod
+Metod
+Equals
+GetHashCode
+GetType
+System.String get_Cvostvo()
+Void set_Cvostvo(System.String)
+System.String ToString()
+Void Metod()
+System.String Metod(System.String)
+Boolean Equals(System.Object)
+Int32 GetHashCode()
+System.Type GetType()
+Int32 Speed
+System.String Model
+System.String Cvostvo
+ConsoleApp12.IInterfaceT
+System.String Metod(System.String)
+get_Cvostvo
+set_Cvostvo
+ToString
+Metod
+Metod
+Equals
+GetHashCode
+GetType
+System.String get_Cvostvo()
+Void set_Cvostvo(System.String)
+System.String ToString()
+Void Metod()
+System.String Metod(System.String)
+Boolean Equals(System.Object)
+Int32 GetHashCode()
+System.Type GetType()
+Int32 Speed
+System.String Model
+System.String Cvostvo
+ConsoleApp12.IInterfaceT
+System.String Metod(System.String)
+get_Cvostvo
+set_Cvostvo
+ToString
+Metod
+Metod
+Equals
+GetHashCode
+GetType
+System.String get_Cvostvo()
+Void set_Cvostvo(System.String)
+System.String ToString()
+Void Metod()
+System.String Metod(System.String)
+Boolean Equals(System.Object)
+Int32 GetHashCode()
+System.Type GetType()
+Int32 Speed
+System.String Model
+System.String Cvostvo
+ConsoleApp12.IInterfaceT
+System.String Metod(System.String)
