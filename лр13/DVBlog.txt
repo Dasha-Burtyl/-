@@ -1,0 +1,1088 @@
+Session's time: 20.12.2017 18:33:09, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 18:35:02, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 18:35:03,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 18:35:03, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 18:47:08, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 18:47:08,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 18:47:08, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 18:47:08, C:\Пользователи\Admin\Source\Repos\ConsoleApp13\bin\Debug
+End session.
+
+
+Session's time: 20.12.2017 18:50:52, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 18:50:52,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 18:50:52, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 18:50:52, C:\Пользователи\Admin\Source\Repos\ConsoleApp13\ConsoleApp13\bin\Debug
+End session.
+
+
+Session's time: 20.12.2017 18:53:45, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 18:53:45,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 18:53:45, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 18:53:45, D:\
+End session.
+
+
+Session's time: 20.12.2017 18:53:45, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 18:53:45, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:07:42, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:07:42,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:07:42, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:07:42, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:07:42, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:07:42, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:07:42, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:08:44, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:08:44,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:08:44, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:08:44, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:08:44, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:08:44, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:08:44, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:09:12,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:09:12, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:34:37,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:34:37, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:36:32,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:36:32, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:37:02,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:37:02, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:41:42,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:41:42, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:45:35,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:45:35, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:46:24,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:46:24, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:47:44,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:47:44, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:48:17,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:48:17, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:49:52,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:49:52, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:50:22,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:50:22, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:51:13,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:51:13, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:57:51,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:57:51, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 19:58:47,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, D:\
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 19:58:47, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:04:58,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:04:58, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:05:59,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:05:59, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:08:58,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:08:58, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:09:35,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:09:35, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:18:49,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:18:49, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:23:23,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:23:23, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:24:56,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:24:56, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:27:47,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:27:47, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:28:45,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:28:45, 16.08.2016 21:10:32
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, Available space to current user218110423040
+End session.
+
+
+Session's time: 20.12.2017 20:33:48,   Drive type:CDRom
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, InformNTFS218110423040476247486464
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, D:\
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, File's name: text.txt, File's extension: .txt, File's length: 15
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, File's creation date: 20.12.2017 18:52:01
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, Count of parent's directories: 0
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, Directory's count: 6
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, File's count in this directory: 1
+End session.
+
+
+Session's time: 20.12.2017 20:33:48, 16.08.2016 21:10:32
+End session.
+
+

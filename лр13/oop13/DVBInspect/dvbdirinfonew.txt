@@ -1,0 +1,2 @@
+Directory's count: 32
+File's count in this directory: 10
