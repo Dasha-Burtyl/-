@@ -1,0 +1,253 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+//using System.Runtime.Serialization.Formatters.Soap;
+using System.Runtime.Serialization.Formatters.Binary;
+//using System.Runtime.Serialization.Json;
+using System.Xml.Serialization;
+using System.Xml;
+using System.Xml.Linq;
+
+
+
+
+namespace ConsoleApp14
+{
+
+   // [DataContract]
+    [Serializable]
+    class Transport
+    {
+    public string sredstvo;
+    public Transport(string a)
+    {
+        sredstvo = a;
+    }
+    public virtual string ToString(Transport obj)
+    {
+        string n = "ok";
+        Console.WriteLine("Транспортное средство: " + obj.sredstvo);
+        return n;
+    }
+}
+    interface IAvto
+    {
+        string ToString(Avto obj);
+        string Ravno(Avto obj1, Avto obj2);
+    }
+
+  //  [DataContract]
+    [Serializable]
+    class Avto : Transport
+    {
+        public string marka;
+        public int nomer;
+       // [DataMember]
+        public Avto(string a, string b, int c) : base(a) 
+        {
+            sredstvo = a;
+            marka = b;
+            nomer = c;
+        }
+        // [DataMember]
+        public virtual string ToString(Avto obj)
+        {
+            string n = "ok";
+            Console.WriteLine("Транспортное средство: " + obj.sredstvo + ", Марка: " + obj.marka + ", Номер " + obj.nomer);
+            return n;
+        }
+        public virtual string Ravno(Avto obj1, Avto obj2)
+        {
+            string n = "ok";
+            if (obj1.nomer == obj2.nomer & obj1.marka == obj2.marka) Console.WriteLine("Это одна и та же машина "); else Console.WriteLine("Это разные машины ");
+            return n;
+        }
+    }
+
+    [Serializable]
+    public class AvtoT 
+    {
+        public string marka;
+        public int nomer;
+        public AvtoT()  { }
+        public AvtoT(string a, string b, int c) 
+        {
+           
+            marka = b;
+            nomer = c;
+        }
+        public virtual string ToString(AvtoT obj)
+        {
+            string n = "ok";
+            Console.WriteLine( ", Марка: " + obj.marka + ", Номер " + obj.nomer);
+            return n;
+        }
+        public virtual string Ravno(AvtoT obj1, AvtoT obj2)
+        {
+            string n = "ok";
+            if (obj1.nomer == obj2.nomer & obj1.marka == obj2.marka) Console.WriteLine("Это одна и та же машина "); else Console.WriteLine("Это разные машины ");
+            return n;
+        }
+    }
+    /// <summary>
+    /// ///////////////////////////////////////////////////
+    /// </summary>
+    class Serializator
+    {
+   
+        static Serializator()
+        {
+          
+        }
+        public void Binary()
+        {
+            Avto one = new Avto("car","BMV", 29);
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream fs = new FileStream("avto.dat", FileMode.OpenOrCreate))
+            {
+                formatter.Serialize(fs, one);
+                Console.WriteLine("Объект сериализован(Binary)");
+            }
+            // десериализация
+            using (FileStream fs = new FileStream("avto.dat", FileMode.OpenOrCreate))
+            {
+                Avto newAvto = (Avto)formatter.Deserialize(fs);
+                Console.WriteLine("Марка: {0} --- Номер: {1}", newAvto.marka, newAvto.nomer);
+                
+            }
+        }
+
+        public void SOAP()
+        {
+//Avto two = new Avto("car", "Lada", 15);
+            // Avto three = new Avto("car", "Pego", 13);
+            // Transport[] cars = new Transport[] { two, three };
+            //SoapFormatter formatter = new SoapFormatter();
+            //  using (FileStream fs = new FileStream("cars.soap", FileMode.OpenOrCreate))
+            // {
+            //   formatter.Serialize(fs, cars);
+
+            //    Console.WriteLine("Объект сериализован");
+            // }
+            //}
+            // десериализация
+            //   using (FileStream fs = new FileStream("cars.soap", FileMode.OpenOrCreate))
+            //    {
+            //  Avto[] newAvto = (Avto[])formatter.Deserialize(fs);
+            // Console.WriteLine("Объект десериализован");
+            // foreach (Avto p in newAvto)
+            //{
+            // Console.WriteLine("Марка: {0} --- Номер: {1}", p.marka, p.nomer);
+            // }
+        }
+        public  void JSON()
+        {
+            //  Avto person1 = new Avto("car","opel", 29);
+            //          Avto person2 = new Avto("car","Bill", 25);
+            //          Avto[] cars = new Avto[] { person1, person2 };
+
+            //         DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Avto[]));
+            //
+            //         using (FileStream fs = new FileStream("cars.json", FileMode.OpenOrCreate))
+            //         {
+            //             jsonFormatter.WriteObject(fs, cars);
+            //           }
+
+            //          using (FileStream fs = new FileStream("cars.json", FileMode.OpenOrCreate))
+            //          {
+            //          Avto[] newAvto = (Avto[])jsonFormatter.ReadObject(fs);
+            //
+            //              foreach (Avto p in newAvto)
+            //              {
+            //      Console.WriteLine("Марка: {0} --- Номер: {1}", newAvto.marka, newAvto.nomer);
+            //  }
+        //}
+
+    }
+
+        public void XML()// стандартный конструктор без параметров
+        {
+            AvtoT four = new AvtoT("car", "Far", 29);
+            XmlSerializer formatter = new XmlSerializer(typeof(AvtoT));
+            // получаем поток, куда будем записывать сериализованный объект
+            using (FileStream fs = new FileStream("four.xml", FileMode.OpenOrCreate))
+            {
+                formatter.Serialize(fs, four);
+
+                Console.WriteLine("Объект сериализован");
+            }
+
+            // десериализация
+            using (FileStream fs = new FileStream("four.xml", FileMode.OpenOrCreate))
+            {
+                AvtoT newAvtoT = (AvtoT)formatter.Deserialize(fs);
+
+                Console.WriteLine("Объект десериализован");
+                Console.WriteLine("Марка: {0} --- Номер: {1}", newAvtoT.marka, newAvtoT.nomer);
+            }
+
+
+        }
+        public  void XPath()
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load("users.xml");
+            XmlElement xRoot = xDoc.DocumentElement;
+            XmlNodeList childnodes = xRoot.SelectNodes("user");//получить только компании
+            foreach (XmlNode n in childnodes)
+            { Console.WriteLine(n.SelectSingleNode("@name").Value); }
+            XmlNodeList childnods = xRoot.SelectNodes("//user/company");
+            foreach (XmlNode n in childnods)
+                Console.WriteLine(n.InnerText);
+        }
+
+        public void XDoc()
+        {
+
+            XDocument xdoc = new XDocument();
+            // создаем первый элемент
+            XElement iphone6 = new XElement("phone");
+            // создаем атрибут
+            XAttribute iphoneNameAttr = new XAttribute("name", "iPhone 6");
+            XElement iphoneCompanyElem = new XElement("company", "Apple");
+            XElement iphonePriceElem = new XElement("price", "40000");
+            // добавляем атрибут и элементы в первый элемент
+            iphone6.Add(iphoneNameAttr);
+            iphone6.Add(iphoneCompanyElem);
+            iphone6.Add(iphonePriceElem);
+
+            // создаем второй элемент
+            XElement galaxys5 = new XElement("phone");
+            XAttribute galaxysNameAttr = new XAttribute("name", "Samsung Galaxy S5");
+            XElement galaxysCompanyElem = new XElement("company", "Samsung");
+            XElement galaxysPriceElem = new XElement("price", "33000");
+            galaxys5.Add(galaxysNameAttr);
+            galaxys5.Add(galaxysCompanyElem);
+            galaxys5.Add(galaxysPriceElem);
+            // создаем корневой элемент
+            XElement phones = new XElement("phones");
+            // добавляем в корневой элемент
+            phones.Add(iphone6);
+            phones.Add(galaxys5);
+            // добавляем корневой элемент в документ
+            xdoc.Add(phones);
+            //сохраняем документ
+            xdoc.Save("phones.xml");
+        }
+     }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Serializator ser = new Serializator();
+            ser.Binary();
+            ser.XML();
+            ser.XPath();
+            ser.XDoc();
+
+        }
+    }
+}
