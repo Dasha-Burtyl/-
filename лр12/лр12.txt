@@ -1,0 +1,121 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Reflection;
+using System.IO;
+
+
+namespace ConsoleApp12
+{
+    public interface IInterfaceT
+    {
+        string ToString();
+        void Metod();
+        void MetodTwo(string n);
+    }
+    public class Transport : IInterfaceT
+    {
+       public int Speed;
+        public string Model;
+        public Transport(int speed, string model)
+        {
+            Speed = speed;
+            Model = model;
+        }
+        public override string ToString()
+        {
+            string n = "ок";
+            Console.WriteLine(this.Model + +this.Speed);
+            return n;
+        }
+        public void Metod()
+        {
+
+        }
+        public void MetodTwo(string n)
+        {
+            Console.WriteLine(n);
+             n = "ok";
+
+        }
+    }
+class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Type type = typeof(Transport);
+            StreamWriter file = new StreamWriter("ClassInfo.txt", true);
+            Console.WriteLine("Методы");
+            foreach (var item in type.GetMethods())
+            {
+                Console.WriteLine(item.Name);
+                file.WriteLine(item.Name);
+            }
+          
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Общедоступные методы");
+            foreach (var item in type.GetMethods(BindingFlags.Instance | BindingFlags.Public ))//Instance Извлекаются методы экземпляра
+            {                                                                                  //Public  Извлекаются открытые методы
+                Console.WriteLine(item);
+                file.WriteLine(item);
+
+            }
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Поля");
+            foreach (var item in type.GetFields())
+            {
+                Console.WriteLine(item);
+                file.WriteLine(item);
+
+            }
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Свойства");
+            foreach (var item in type.GetProperties())
+            {
+                Console.WriteLine(item);
+                file.WriteLine(item);
+
+            }
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Интерфейсы");
+            foreach (var item in type.GetInterfaces())
+            {
+                Console.WriteLine(item);
+                file.WriteLine(item);
+
+            }
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Методы с заданным параметром");
+            string n ="ok";
+            foreach (var item in type.GetMethods())
+            {
+                foreach (var par in item.GetParameters())
+                {
+                    if (par.GetType() == n.GetType())
+                    {
+                        Console.WriteLine(par);
+                    }
+                }
+            }
+          file.Close();
+
+
+            Console.WriteLine("---------------------------");
+            FileStream fs = new FileStream("param.txt", FileMode.Open);
+            StreamReader sr = new StreamReader(fs, Encoding.UTF8);
+            string line;
+            line = sr.ReadLine();
+            Transport transport1 = new Transport(100, "Audi");
+            transport1.MetodTwo(line);
+            sr.Close();
+
+
+
+
+        }
+    }
+}
+
