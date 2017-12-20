@@ -1,0 +1,162 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp11
+{
+    partial class Vrema
+    {
+        public int chas;
+        public int min;
+        public int sec;
+        static int z;
+        public int Chasy
+        {
+            get { if (chas <= 23 & chas >= 0) return 1; return chas; }
+            set { chas = value; }
+        }
+        public int Minyt
+        {
+            get { if (min <= 59 & min >= 0) return 1; return min; }
+            set { min = value; }
+        }
+        public int Secynd
+        {
+            get { if (sec <= 59 & sec >= 0) return 1; return sec; }
+        }
+        public Vrema(int a, int b, int c)
+        {
+            chas = a;
+            min = b;
+            sec = c;
+            z++;
+        }
+        public void reWrite()
+        {
+            Vrema.Inform();
+            Console.WriteLine("Время: " + chas + "." + min + "." + sec);
+        }
+        static void Inform()
+        {
+            Console.WriteLine("(" + z.ToString() + ")");
+        }
+        public void Categorii()
+        {
+            if (chas >= 22 || chas >= 0 & chas <= 6) Console.WriteLine("Сейчас ночь");
+            if (chas > 6 & chas <= 10) Console.WriteLine("Сейчас утро");
+            if (chas > 10 & chas <= 17) Console.WriteLine("Сейчас день");
+            if (chas > 17 & chas <= 22) Console.WriteLine("Сейчас вечер");
+        }
+        public bool ravno()
+        {
+            bool b= false;
+            if (chas == 23)  b=true;
+            return b;
+        }
+
+        public void Zadanie(int x, int w, int v)
+        {
+
+            Console.WriteLine("Введите часы ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите минуты ");
+            w = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите секунды ");
+            v = Convert.ToInt32(Console.ReadLine());
+            Vrema n = new Vrema(x, w, v);
+            z--;
+            n.reWrite();
+            if (n.Chasy == 1 & n.Minyt == 1 & n.Secynd == 1) { Console.WriteLine("Время задано корректно"); n.Categorii(); } else Console.WriteLine("Время задано не корректно");
+            Console.ReadLine();
+        }
+    }
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] myArr = new string[] { "June", "July", "May", "December", "January", "February", "March", "April", "August", "September", "October", "November"};
+            IEnumerable<string> shortMonth = myArr.TakeWhile(p => p.Length < 5);  //Эта операция TakeWhile принимает входную последовательность и делегат метода-предиката, а возвращает объект, перечисление по которому выдает элементы до тех пор, пока метод-предикат не вернет false
+            foreach (string str in shortMonth)
+                Console.WriteLine(str);
+
+            var sumWinMounth = from month in myArr       
+                               where month == myArr[0] ||
+                                     month == myArr[1] ||
+                                     month == myArr[8] ||
+                                     month == myArr[4] ||
+                                     month == myArr[5] ||
+                                     month == myArr[6]
+                               select month;
+            Console.WriteLine("-------------");
+            foreach (string months in sumWinMounth)
+            { Console.WriteLine(months); }
+            Console.WriteLine("-------------");
+            var alphabeth = from month in myArr orderby month select month;
+            foreach (string months in alphabeth)
+            { Console.WriteLine(months); }
+            Console.WriteLine("-------------");
+            var umonths = from month in myArr where month.Contains('u') && month.Length >= 4 select month;
+            foreach (string months in umonths)
+            { Console.WriteLine(months); }
+
+            //время с заданным значением часов; списки времен по группам: ночь, утро, день, вечер 
+            //минимальное время Первое время в котором часы и минуты совпадают Упорядоченный список времен//
+            Console.WriteLine("!-------------!");
+            Vrema one = new Vrema(23, 15, 36);
+            Vrema two = new Vrema(21, 21, 36);
+            Vrema tri = new Vrema(4, 12, 01);
+            List<Vrema> time= new List<Vrema> {one, two, tri };
+            var ravenstvo = from hover in time where
+                            hover.chas==23 
+                            select hover;
+            foreach (Vrema hover in ravenstvo)
+            { Console.WriteLine(hover.chas); }
+            Console.WriteLine("!-------------!");
+            var ChasMin = from hover in time
+                            where
+                            hover.chas == hover.min
+                            select hover;
+            foreach (Vrema hover in ChasMin)
+            { Console.WriteLine(hover.chas); }
+            Console.WriteLine("!-------------!");
+            var Range1 = from hover in time where
+                        hover.chas >0 && hover.chas<6
+                        select hover;
+            foreach (Vrema hover in Range1)
+            { Console.WriteLine(hover.chas); }
+            Console.WriteLine("-");
+            var Range2 = from hover in time where
+                   hover.chas > 7 && hover.chas < 11
+                    select hover;
+            foreach (Vrema hover in Range2)
+            { Console.WriteLine(hover.chas); }
+            Console.WriteLine("-");
+            var Range3 = from hover in time
+                         where
+              hover.chas > 11 && hover.chas < 17
+                         select hover;
+            foreach (Vrema hover in Range3)
+            { Console.WriteLine(hover.chas); }
+            Console.WriteLine("-");
+            var Range4 = from hover in time where
+              hover.chas > 17 && hover.chas < 24
+              select hover;
+            foreach (Vrema hover in Range4)
+            { Console.WriteLine(hover.chas); }
+
+            Console.WriteLine("!-------------!");
+            var Range = from hover in time
+                         where
+     hover.chas > 0 && hover.chas < 6
+                         select hover;
+            foreach (Vrema hover in Range)
+            { Console.WriteLine(hover.chas); }
+        }
+
+    }
+}
